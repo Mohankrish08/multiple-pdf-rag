@@ -39,7 +39,7 @@ def get_vectorstore(text_chunks):
 
 def get_conversation_chain(vectorstore):
     # llm = ChatOpenAI()
-    llm = HuggingFaceHub(repo_id="mistralai/Mistral-7B-Instruct-v0.2", model_kwargs={"temperature":0.5, "max_length":512},huggingfacehub_api_token='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')
+    llm = HuggingFaceHub(repo_id="CohereForAI/c4ai-command-r-plus", model_kwargs={"temperature":0.5, "max_length":512},huggingfacehub_api_token='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')
 
     memory = ConversationBufferMemory(
         memory_key='chat_history', return_messages=True)
