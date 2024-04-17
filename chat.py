@@ -28,7 +28,7 @@ from langchain.llms import HuggingFaceHub
 
 def model_inference(texts):
     model_name = "CohereForAI/c4ai-command-r-plus"
-    llm = HuggingFaceHub(repo_id = model_name, model_kwargs = {'temperature':0.2, 'max_length': 500}, huggingfacehub_api_token="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")
+    llm = HuggingFaceHub(repo_id = model_name, model_kwargs = {'temperature':0.2, 'max_length': 500}, huggingfacehub_api_token=<>)
     return llm(texts)
 
 
